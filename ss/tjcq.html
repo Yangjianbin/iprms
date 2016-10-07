@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div.table_1
+		{
+			position: fixed;
+			left: 350px;
+			bottom: 100px
+		}
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+input.i
+{
+	width: 195px;
+	height:20px;
+}
+
+option.o1
+{
+	width: 175px;
+	height:20px;
+}
+
+
+
+	</style>
+</head>
+<body style="font-size: 15px">
+
+基本信息：<br><br>
+<table>
+<tr>
+<td>所有权人：<input type="text" name="ownership" class="i"></td>
+<td>发&nbsp;&nbsp;明&nbsp;&nbsp;人：<input type="text" name="Inventor" class="i"></td>
+<td>代理机构：<select><option value="self" class="o1">可自己添加</option></select></td>
+</tr>
+<tr style="height: 20px"></tr>
+<tr>
+	<td>产权名称：<input type="text" name="titname" class="i"></td>
+	<td>产权类型：<select><option value="cqtype" class="o1">可自己添加</option></select></td>
+	<td><span>申</span><span>&nbsp;&nbsp;</span>请&nbsp;&nbsp;日：<img src="日期_u47.png" id="u45_img"></td>
+</tr>
+<tr style="height: 20px"></tr>
+<tr>
+	<td>申&nbsp;&nbsp;请&nbsp;&nbsp;号：<input type="text" name="sqnum" class="i"></td>
+	<td>产品类型：<select><option value="cptype" class="o1">可自己添加</option></select></td>
+	<td>授&nbsp;&nbsp;权&nbsp;&nbsp;日：<img src="日期_u47.png" id="u46_img"></td>
+</tr>
+<tr style="height: 20px"></tr>
+<tr>
+	<td>证&nbsp;&nbsp;书&nbsp;&nbsp;号：<input type="text" value="5767" name="zsnum" class="i"></td>
+	<td>法律状态：<select><option class="o1">可自己添加</option></select></td>
+</tr>
+
+<tr>
+	<td><br>附件上传：</td>
+	<td><button type="button" style="position: absolute; right: 80px; top: 230px; height:40px;width: 80px">添加</button></td>
+</tr>
+
+</table>
+
+<img src="u13_line.png"><br>
+
+申&nbsp;请&nbsp;号：&nbsp;&nbsp;<input type="text" name="sqnum2" class="i"><br><br>
+缴费类型：<select><option class="o1">可自己添加</option></select><br><br>
+官&nbsp;&nbsp;&nbsp;&nbsp;费：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="officer" class="i">元<br><br>
+代&nbsp;理&nbsp;费：&nbsp;&nbsp;<input type="text" name="agent" class="i">元<br><br>
+
+<div>
+	缴&nbsp;费&nbsp;日：&nbsp;&nbsp;<img src="日期_u47.png" id="u47_img">
+</div>
+
+备注：<input type="text" name="remarks" style="height: 100px"><br>
+<button>添加</button>
+
+<div class="table_1">
+	<table class="gridtable">
+		<tr>
+			<th width="80px">缴费类型</th>
+			<th width="80px">官费（元）</th>
+			<th width="80px">代理费(元）</th>
+			<th width="80px">缴费日期</th>
+			<th width="100px">备注</th>
+		</tr>
+		<tr style="height: 30px">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr style="height: 30px">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr style="height: 30px">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr style="height: 30px">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr style="height: 30px">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr style="height: 30px">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</div>
+	
+</body>
+</html>

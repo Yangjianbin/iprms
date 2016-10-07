@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	
+	div.ax
+	{
+    position: absolute;
+    left: 86px;
+    top: 82px;
+    width: 200px;
+    height: 25px;
+    font-size: 12px;
+    color: #009DDA;
+    text-align: left;
+	}
+
+	.wh
+	{
+		height: 20px;
+		width:180px;
+	}
+
+	table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	text-align: center;
+	color:#333333;
+	padding-top: 50px
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+.wrap{margin:0 auto; width: 900px;text-align: center; margin-top: 30px;} 
+
+		
+	</style>
+	
+	
+</head>
+<body>
+<span >
+	<div style="margin-top: 20px">
+		<span>申&nbsp;&nbsp;&nbsp;请&nbsp;&nbsp;&nbsp;号：<input type="text" name="sqnum" class="wh"></span>
+		<span style="margin-left: 30px">名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：<input type="text" name="mingc" class="wh"></span>
+		<span style="margin-left: 30px">所有权人：<input type="text" name="syqren" class="wh"></span>
+	</div>
+
+	<div style="margin-top: 20px">
+		
+		<span>产&nbsp;品&nbsp;类&nbsp;型&nbsp;：<select id="u01_input" class="wh">
+                <option value="可自己添加">可自己添加</option>
+                <option selected="" value="打包机">打包机</option>
+                <option value="缠绕机">缠绕机</option>
+                <option value="膜包机">膜包机</option>
+		</select>
+		</span>
+		<span style="margin-left: 30px">发&nbsp;&nbsp;&nbsp;&nbsp;明&nbsp;&nbsp;&nbsp;&nbsp;人：<input type="text" name="fmr" class="wh"></span>
+		<span style="margin-left: 30px">代理机构：<select id="u02_input" class="wh">
+                <option value="可自己添加">可自己添加</option>
+                <option selected="" value="金通">金通</option>
+        
+		</select>
+		</span>		
+	</div>
+
+	<div id="u05" style="position: relative; margin-top: 20px">
+	<span>申请日开始：<img id="u03_img" src="images/日期_u47.png" class="wh"></span>
+	<div style="position: absolute; z-index: 2;left: 10px;top: 10px">		
+	</div>
+
+	<span style="margin-left: 30px">授权日开始：<img id="u04_img" src="images/日期_u47.png" class="wh"></span>
+	<span style="margin-left: 30px">产权类型：<select id="u07_input" class="wh">
+                <option value="可自己添加">可自己添加</option>
+                <option selected="" value="发明专利">发明专利</option>
+                <option value="实用新型专利">实用新型专利</option>
+                <option value="外观专利">外观专利</option>
+                <option value="计算机软件著作权登记">计算机软件著作权登记</option>
+                <option value="登记">登记</option>
+	</select>
+	</span>
+	</div>
+
+	<div style="margin-top: 20px">
+		<span>申请日截至：<img id="u08_img" src="images/日期_u47.png" class="wh"></span>
+		<span style="margin-left: 30px">授权日结束：<img id="u10_img" src="images/日期_u47.png" class="wh"></span>
+		<span style="margin-left: 30px">法律状态：<select id="u11" class="wh">
+		<option value="可自己添加">可自己添加</option>	
+		<option value="可用">可用</option>
+		</select>
+		</span>
+	</div>	
+</span>
+<span style="position: fixed;right: 50px;top: 30px ">
+	<button id="bt01" type="button">导出全部信息</button><br>
+	<button id="bt02" type="button" style="margin-top: 20px">导出基本信息</button><br>
+	<img  id="u65_img" src="images/u655.png" style="margin-top: 20px">
+</span>
+
+
+	<div style="margin-top: 30px">
+	<table class="gridtable">
+		<tr>
+			<th width="40px">序号</td>
+			<th width="120px">名称</th>
+			<th width="160px">产权类型</th>
+			<th width="80px">产品类型</th>
+			<th width="80px">代理机构</th>
+			<th width="60px">状态</th>
+			<th width="70px">所有人</th>
+			<th width="70px">发明人</th>
+			<th width="70px">申请号</th>
+			<th width="70px">证书号</th>
+			<th width="60px">授权日</th>
+			<th width="60px">申请日</th>
+			<th width="60px">缴费信息</th>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+		
+		<tr>
+			<td>4</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+
+		<tr>
+			<td>5</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+
+		<tr>
+			<td>6</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+
+		<tr>
+			<td>7</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+
+		<tr>
+			<td>8</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+
+		<tr>
+			<td>9</td>
+			<td>打包机的卡带结构</td>
+			<td>计算机软件著作权登记</td>
+			<td>打包机</td>
+			<td>金通</td>
+			<td>正常</td>
+			<td>罗邦毅</td>
+			<td>罗邦毅</td>
+			<td>200410033143.9</td>
+			<td>478674</td>
+			<td>2004-4-6</td>
+			<td>2004-4-6</td>
+			<td>缴费</td>
+		</tr>
+	</table>
+	</div>
+
+	<div style="color:#0000ff;" class="wrap">
+		<span style="text-decoration: underline;">Prev</span>
+		<span><img src="images/u679.png"></span>
+		<span style="text-decoration: underline;">1</span>
+		<span style="text-decoration: underline;">2</span>
+		<span style="text-decoration: underline;">...</span>
+		<span style="text-decoration: underline;">14</span>
+		<span style="text-decoration: underline;">15</span>
+		<span style="text-decoration: underline;">16</span>
+		<span style="text-decoration: underline;">...</span>
+		<span style="text-decoration: underline;">22</span>
+		<span style="text-decoration: underline;">23</span>
+		<span><img src="images/u675.png"></span>
+		<span style="text-decoration: underline;">Next</span>
+	</div>
+</body>
+</html>
